@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Какой-то стартап</h1>
+    <div class="page-wrapper">
+      <form action="" class="form">
+          <div class="main-input-wrapper">
+          <div class="type-wrapper">
+            <select name="type" id="type" class="form__select" required >
+              <option value="">Профессия</option>
+              <option value="frontend">Фронтенд разработчик</option>
+              <option value="backend">Бэкенд разработчик</option>
+              <option value="qa">Тестировщик</option>
+              <option value="pm">Продакт менеджер</option>
+            </select>
+          </div>
+         <div class="name-wrapper">
+          <label for="name">Имя работника</label>
+          <input type="text" name="name" id="name" required />
+         </div>
+         <div class="age-wrapper">
+          <label for="age">Возраст работника</label>
+          <input type="number" min="0" name="age" id="age"  required />
+         </div>
+         
+          <div class="check">
+            <input type="checkbox" name="dinner" id="dinner" />
+            <label for="dinner">Обедает ли в компании?</label>
+          </div>
+          <div class="description">
+            <label for="description"> Описание работника</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+          </div>
+        
+        </div>
+  
+        <div class="frontend-wrapper wrapper " id="frontend">
+          <label class="label-text" for="ui">Обязанности UI</label>
+          <input type="text" name="ui" id="ui"  />
+          <label class="label-text2" for="ux">Обязанности UX</label>
+          <input type="text" name="ux" id="ux"  />
+        </div>
+        <div class="backend-wrapper wrapper" id="backend">
+          <label class="label-text" for="sql">Обязанности SQL</label>
+          <input type="text" name="sql" id="sql"  />
+          <label class="label-text2" for="busines logic">Обязанности бизнес логики</label>
+          <input type="text" name="busines logic" id="busines-logic"  />
+        </div>
+        <div class="qa-wrapper wrapper" id="qa">
+          <label class="label-text" for="manual-tests">Обязанности мануального тестирования</label>
+          <input type="text" name="manual-tests" id="manual-tests"  />
+          <label class="label-text2" for="regress-tests"
+            >Обязанности регрессивного тестирования</label
+          >
+          <input type="text" name="regress-tests" id="regress-tests"  />
+        </div>
+        <div class="pm-wrapper wrapper" id="pm">
+          <label class="label-text" for="tasks">Обязанности высставления задач</label>
+          <input type="text" name="tasks" id="tasks"  />
+          <label class="label-text2" for="sells">Обязанности продаж</label>
+          <input type="text" name="sells" id="sells"  />
+
+        </div>
+        <!-- <input type="submit" value="Добавить анкету" id="submit" /> -->
+        <button class="sbt-button" type="submit" id="submit"  >Добавить анкету</button>
+      </div>
+        </form>
+      </div>
+
+      <div class="content__table">
+        <h2>Данные о конкретном работнике</h2>
+        
+        <table>
+       
+            <tr>
+              <th>Профессия</th>
+              <th>Имя</th>
+              <th>Возраст</th>
+              <th>Обедает ли в кампании?</th>
+              <th class="task-1">Обязанности 1.</th>
+              <th class="task-2">Обязанности 2.</th>
+              <th>Описание</th>
+              <th>-</th>
+            </tr>
+            
+           
+          </table>
+      </div>
+
+    </div>
+  </body>
+</html>
