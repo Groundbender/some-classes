@@ -122,6 +122,9 @@ class QA extends Worker {
   set regress(str) {
     this._regress = str;
   }
+  deleteObj() {
+    super.deleteObj();
+  }
 }
 class PM extends Worker {
   constructor(name, type, dinner, description, tasks, sells) {
